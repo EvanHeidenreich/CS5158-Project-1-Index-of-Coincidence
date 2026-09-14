@@ -160,7 +160,7 @@ def decryption():
 def long_cipher_encryption():
     # Read the contents of the file "MasqueOfTheRedDeath.txt" and store it in the variable "text"
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    text = read_file(os.path.join(script_dir, "build/data/MasqueOfTheRedDeath.txt"))
+    text = read_file(os.path.join(script_dir, "..", "data", "MasqueOfTheRedDeath.txt"))
     if text is None:
         return
     # Filter the text to include only lowercase alphabetic characters
@@ -285,7 +285,7 @@ def best_shift_key(column):
 # Main function to run the program
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    text = read_file(os.path.join(script_dir, "build/data/MasqueOfTheRedDeath.txt"))
+    text = read_file(os.path.join(script_dir, "..", "data", "MasqueOfTheRedDeath.txt"))
     if text is None:
         return
 
