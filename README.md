@@ -6,16 +6,17 @@ A command-line tool for classical cryptanalysis of the Vigenère cipher. It comp
 
 ```
 ic_m14998238/
-└── src/
-    ├── main.py                       # All program logic and the interactive menu
-    └── build/
-        └── data/
-            ├── GiftOfTheMagi.txt
-            ├── MasqueOfTheRedDeath.txt
-            └── TheGreatGatsby.txt
+├── src/
+│   └── main.py            # All program logic and the interactive menu
+├── build/                  # Build output (empty; reserved per assignment spec)
+├── data/
+│   ├── GiftOfTheMagi.txt
+│   ├── MasqueOfTheRedDeath.txt
+│   └── TheGreatGatsby.txt
+└── report.pdf              # Written report for the assignment
 ```
 
-The sample texts in `build/data/` are used as plaintext source material for frequency analysis and for generating long ciphertexts to attack.
+The sample texts in `data/` are used as plaintext source material for frequency analysis and for generating long ciphertexts to attack.
 
 ## Requirements
 
